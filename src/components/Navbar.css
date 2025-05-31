@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 1rem;
+}
