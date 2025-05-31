@@ -1,12 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+}
+
 .navbar {
   display: flex;
   gap: 2rem;
   padding: 1rem 2rem;
-  background-color: #f0f0f0;
+  background-color: #2a9d8f;
   align-items: center;
   justify-content: space-between;
+  max-height: 40px;
   
 }
+.linkTo {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.linkTo:visited,
+.linkTo:active,
+.linkTo:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 
 .cart-link {
   position: relative;
@@ -27,7 +48,8 @@
 }
 
 .logo {
-  height: 40px;
+  height: 60px;
   width: auto;
   margin-right: 1rem;
+  border-radius: 15px;
 }
