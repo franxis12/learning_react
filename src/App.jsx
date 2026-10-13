@@ -1,10 +1,15 @@
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import LandingPage from './pages/LandingPage';
-import ProductsPage from './pages/ProductsPage';
-import CartPage from './pages/CartPage';
+import { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import LandingPage from "./pages/LandingPage";
+import ProductsPage from "./pages/ProductsPage";
+import CartPage from "./pages/CartPage";
 
 function App() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [pathname]);
   return (
     <>
       <Navbar />

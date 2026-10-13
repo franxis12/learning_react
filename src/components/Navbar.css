@@ -1,49 +1,130 @@
-
-.navbar {
+.announcement {
+  background: #2a9d8f;
+  color: #fff;
+  padding: 9px 24px;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.2px;
   display: flex;
-  gap: 2rem;
-  padding: 1rem 2rem;
-  background-color: #2a9d8f;
+  justify-content: center;
+  gap: 26px;
+}
+.announcement span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.navbar {
+  width: calc(100% - 100px);
+  max-width: 1300px;
+  margin: auto;
+  height: 100px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  max-height: 40px;
-  
+  border-bottom: 1px solid #d7dedb;
 }
-.linkTo {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.linkTo:visited,
-.linkTo:active,
-.linkTo:hover {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-
-.cart-link {
-  position: relative;
+.nursery-brand {
   display: flex;
   align-items: center;
+  gap: 12px;
+  color: #264a42;
 }
-
+.nursery-brand > svg {
+  width: 34px;
+  height: 34px;
+  stroke-width: 1.2;
+}
+.nursery-brand > span {
+  font-family: Georgia, serif;
+  font-size: 29px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.nursery-brand small {
+  display: block;
+  font:
+    7px Arial,
+    sans-serif;
+  letter-spacing: 2px;
+  margin-top: 9px;
+}
+.navbar nav {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+}
+.navbar nav > a {
+  font-size: 11px;
+  color: #718078;
+  padding: 10px 0;
+}
+.navbar nav > a.active {
+  color: #205f55;
+}
+.navbar nav .cart-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 22px;
+}
+.cart-link svg {
+  font-size: 18px;
+}
 .cart-count {
-  position: absolute;
-  top: -8px;
-  right: -10px;
-  background-color: red;
-  color: white;
+  background: #e1ece7;
+  color: #36675b;
   border-radius: 50%;
-  padding: 2px 6px;
-  font-size: 0.75rem;
-  font-weight: bold;
+  width: 23px;
+  height: 23px;
+  display: grid;
+  place-items: center;
+  font-size: 9px;
 }
-
-.logo {
-  height: 60px;
-  width: auto;
-  margin-right: 1rem;
-  border-radius: 15px;
+@media (max-width: 700px) {
+  .navbar {
+    height: 83px;
+    width: calc(100% - 40px);
+  }
+  .navbar nav {
+    gap: 20px;
+  }
+  .navbar nav .cart-link {
+    margin-left: 0;
+  }
+  .bag-label {
+    display: none;
+  }
+  .nursery-brand > span {
+    font-size: 25px;
+  }
+  .nursery-brand > svg {
+    width: 26px;
+  }
+  .announcement {
+    font-size: 8px;
+    gap: 10px;
+    padding: 9px 10px;
+  }
+  .announcement span {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .navbar nav {
+    gap: 13px;
+  }
+  .navbar nav > a {
+    font-size: 10px;
+  }
+  .nursery-brand {
+    gap: 7px;
+  }
+  .nursery-brand > span {
+    font-size: 21px;
+  }
+  .nursery-brand small {
+    font-size: 6px;
+    letter-spacing: 1.5px;
+  }
 }

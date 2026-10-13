@@ -1,12 +1,32 @@
-# React + Vite
+# Paradise Nursery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A plant-shop portfolio demo built with React, Redux Toolkit, React Router, and Vite. The redesign keeps the original teal (`#2a9d8f`) identity and garden photograph, with an editorial landing page and a consistent catalog and shopping bag.
 
-Currently, two official plugins are available:
+[Live demo](https://franxis12.github.io/learning_react/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Landing preview](docs/preview.jpg)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive landing page with links to aromatic and medicinal collections.
+- Sixteen plants with category filters and clear add-to-bag feedback.
+- Quantity controls, removal, accurate subtotals, and persistent cart state.
+- Graceful fallback when an original remote product photograph is unavailable.
+- Keyboard labels, visible focus styles, and reduced-motion support.
+
+This is a demonstration, not an operating store. Prices are examples. The bag review does not place orders or process payments. The original product image sources remain in `src/data/productsData.js`; the garden photograph is bundled locally.
+
+## Development
+
+```sh
+npm ci
+npm run dev
+npm run build
+npm run lint
+```
+
+Vite uses `/learning_react/` as its base path. Hash routing supports direct navigation on GitHub Pages. `npm run deploy` builds and updates the existing `gh-pages` publication branch. Development changes belong on `main`.
+
+## Validation
+
+Production build and ESLint pass. Browser checks cover collection navigation, adding/removing plants, quantity totals, persisted cart state, demo review, and mobile layouts.
